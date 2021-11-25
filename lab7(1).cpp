@@ -9,9 +9,7 @@ int main()
 		for (int i = 0; i <=11; i++, k++)
 		{
 			a[i][j] = k;
-			//cout << a[i][j] << setw(4);
 		}
-			//cout << endl;
 	}
 
 	for (int i = 0; i < 12; i++) {
