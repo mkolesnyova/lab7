@@ -17,4 +17,5 @@ int main()
 		}
 		cout << endl;
 	}
+	cout << "k = " << k ;
 }
