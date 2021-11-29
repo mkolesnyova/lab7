@@ -1,13 +1,13 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cmath>/*pow*/
 using namespace std;
 int main()
 {
 	const int n = 3;
-	int i, j, k = 0;
-	double v, f;
-	int a[n][n];
-	int p = 1;
+	int i, j;
+	double k = 0, v, f, h;
+	double a[n][n];
+	double p = 1;
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
@@ -20,7 +20,19 @@ int main()
 			}
 		}
 	}
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < n; j++)
+		{
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
+	cout << "p=" << p << endl << "k=" << k<<endl;
+	h = p;
+	if (p < 0) h = p *(-1);
 	v = 1 / k;
-	f = pow(p, v);
-	cout << "sr.geom= " << f;
+	f = pow(h, v);
+	if (p<0) cout << "sr.geom= -" << f;
+	else cout << "sr.geom= " << f;
 }
