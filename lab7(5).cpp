@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     const int n = 5;
-    int a[n][n], h[n], k[n], i, j, m=0, v=0;
+    int a[n][n], h[n*n], k[n*n], i, j, m=0, v=0;
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
@@ -45,7 +45,7 @@ int main()
     stack <int> steck1;
     stack <int> steck2;
     const int n = 5;
-    int a[n][n],h[n],k[n], i, j;
+    int a[n][n],h[n*n],k[n*n], i, j;
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
